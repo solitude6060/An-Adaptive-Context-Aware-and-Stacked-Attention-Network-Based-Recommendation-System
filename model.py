@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
+import copy
 from torch.autograd import Variable
 
 class multi_head_project(nn.Module):
@@ -169,7 +170,7 @@ class stacked_AttRec(AttentiveRec):
                     user_rep = getattr(self, name)(user_embed, context_item)
                     user_rep = user_rep + user_embed
                 else:
-                    prev_rep = user_rep
+                    prev_rep = user_rep.copy()
                     user_rep = getattr(self, name)(user_rep, context_item)
                     user_rep = user_rep + prev_rep
             

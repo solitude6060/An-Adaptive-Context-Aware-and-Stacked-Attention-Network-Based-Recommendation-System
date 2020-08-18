@@ -11,10 +11,10 @@ class Dataset():
 
         if self.dataset == 'ml-1m':
             print("MovieLens-1m")
-            self.movies_path = raw_data_path+'movies.dat'
+            # self.movies_path = raw_data_path+'movies.dat'
         elif self.dataset == 'ml-100k':
             print("MovieLens-100k")
-            self.movies_path = raw_data_path+'movies.csv'
+            # self.movies_path = raw_data_path+'movies.csv'
         elif self.dataset == 'beauty':
             print("Amazon-Beauty")
         elif self.dataset == 'pinterest':

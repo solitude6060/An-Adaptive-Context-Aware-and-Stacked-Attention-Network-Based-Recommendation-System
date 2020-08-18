@@ -95,13 +95,12 @@ if __name__ == '__main__':
 
     print(info)
 
+    print("Data loading...\n\n")
     data = Dataset(dataset)
     data.load_data()
     num_user = data.num_user
     num_item = data.num_item
 
-    
-    print("Data loading...\n\n")
     model_args = ARGS(num_users=num_user, num_items=num_item, latent_dim=emb_size, learning_rate=learning_rate)
     train_context_data, test_context_data = make_training_data(data.user_session, window_size=window_size)
 
