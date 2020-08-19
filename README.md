@@ -27,7 +27,7 @@ This deep-learning-based recommendation system using two kinds of attention modu
 
 Run : 
 ```shell
-python python.py --d 32 -l 0.001 -e 50 -D ml-100k -b 256 -w 5 -n 10 -i 1 -s 5 -h 5 -t 0
+python main.py --d 32 -l 0.001 -e 50 -D ml-100k -b 256 -w 5 -n 10 -i 1 -s 5 -h 5 -t 0
 ```
 
 ## Environment:
