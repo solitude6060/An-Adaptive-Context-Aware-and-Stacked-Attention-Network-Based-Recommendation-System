@@ -10,7 +10,6 @@ in NCKU CSIE
 This deep-learning-based recommendation system using two kinds of attention modules to capture users' changing preferences and learn how to adapt to the dynamic changing pattern
 
 ## Quick to Start
----
 ```
     Parameters' definitions:
         -d (int) embedding dimensions
@@ -32,7 +31,6 @@ python python.py --d 32 -l 0.001 -e 50 -D ml-100k -b 256 -w 5 -n 10 -i 1 -s 5 -h
 ```
 
 ## Environment:
----
 Python 3.6
 
 Torch >= 1.4.0
@@ -52,7 +50,6 @@ PS. For your reference, our server environment is NVIDIA® Tesla V100 GPU
 
 
 ## Dataset:
----
 We provide four processed datasets: MovieLens 1 Million (ml-1m), MovieLens 100k (ml-100k), Amazon Beauty (beauty) and Pinterest with pretrained bpr weight in Data
 
 Pretrained bpr weight for each model are save in model/bpr/dataset
