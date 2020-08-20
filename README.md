@@ -43,7 +43,7 @@ torchsummaryX == 1.3.0
 
 tqdm == 4.31.1
 
-Or you can just use commend :
+Or you can just use command :
 
 ```shell
 pip install -r requirement.txt
