@@ -43,7 +43,11 @@ torchsummaryX == 1.3.0
 
 tqdm == 4.31.1
 
-Or you can just pip install requirement.txt
+Or you can just use commend :
+
+```shell
+pip install -r requirement.txt
+```
 
 
 PS. For your reference, our server environment is NVIDIA® Tesla V100 GPU
