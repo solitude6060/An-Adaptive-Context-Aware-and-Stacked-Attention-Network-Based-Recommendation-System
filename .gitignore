@@ -1,5 +1,5 @@
 # model file
-*state_dict
+model/models/*_state_dict
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
