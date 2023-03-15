@@ -3,7 +3,7 @@
 
 This is our offical implement for paper:
 **An Adaptive, Context-Aware, and Stacked Attention Network-Based Recommendation System to Capture Users’ Temporal Preference**
-published in TKDE and the master thesis :
+which is published in TKDE and the master thesis :
 **Adaptive Context Aware Recommendation System via Stacked Attention Network**
 in NCKU CSIE
 
