@@ -1,7 +1,13 @@
-# Adaptive Context Aware Recommendation System via Stacked Attention Network
-This is our offical implement for the master thesis :
+# An Adaptive, Context-Aware, and Stacked Attention Network-Based Recommendation System to Capture Users’ Temporal Preference
+## (Adaptive Context Aware Recommendation System via Stacked Attention Network)
+
+This is our offical implement for paper:
+**An Adaptive, Context-Aware, and Stacked Attention Network-Based Recommendation System to Capture Users’ Temporal Preference**
+published in TKDE and the master thesis :
 **Adaptive Context Aware Recommendation System via Stacked Attention Network**
 in NCKU CSIE
+
+See paper in: https://ieeexplore.ieee.org/document/9670723
 
 **Author : Chung-Yao, Ma, This code was finished in 2020/8/18** 
 
