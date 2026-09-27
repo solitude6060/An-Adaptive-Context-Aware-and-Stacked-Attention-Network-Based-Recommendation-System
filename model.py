@@ -156,7 +156,7 @@ class stacked_AttRec(AttentiveRec):
             
             # item attention
             weight = torch.mul(items_embed, user_embed.view(user_embed.shape[0],1,user_embed.shape[1])).sum(-1).clamp(min=1e-12)
-            item_weight = F.softmax(input=weight, dim=0)
+            item_weight = F.softmax(input=weight, dim=1)
             weighted_item = torch.mul(items_embed.transpose(1,2), item_weight.view(item_weight.shape[0],1,item_weight.shape[1]))
             context_item = weighted_item.transpose(1,2).sum(1)
             
@@ -170,7 +170,7 @@ class stacked_AttRec(AttentiveRec):
                     user_rep = getattr(self, name)(user_embed, context_item)
                     user_rep = user_rep + user_embed
                 else:
-                    prev_rep = user_rep.copy()
+                    prev_rep = user_rep.clone()
                     user_rep = getattr(self, name)(user_rep, context_item)
                     user_rep = user_rep + prev_rep
             
@@ -186,7 +186,7 @@ class stacked_AttRec(AttentiveRec):
             
             # posi item attention
             posi_weight = torch.mul(posi_items_embed, user_embed.view(user_embed.shape[0],1,user_embed.shape[1])).sum(-1).clamp(min=1e-12)
-            posi_item_weight = F.softmax(input=posi_weight, dim=0)
+            posi_item_weight = F.softmax(input=posi_weight, dim=1)
             posi_weighted_item = torch.mul(posi_items_embed.transpose(1,2), posi_item_weight.view(posi_item_weight.shape[0],1,posi_item_weight.shape[1]))
             posi_context_item = posi_weighted_item.transpose(1,2).sum(1)
             
@@ -216,7 +216,7 @@ class stacked_AttRec(AttentiveRec):
             
             # cnn item attention
             cnn_weight = torch.mul(cnn_items_embed, user_embed.view(user_embed.shape[0],1,user_embed.shape[1])).sum(-1).clamp(min=1e-12)
-            cnn_item_weight = F.softmax(input=cnn_weight, dim=0)
+            cnn_item_weight = F.softmax(input=cnn_weight, dim=1)
             cnn_weighted_item = torch.mul(cnn_items_embed.transpose(1,2), cnn_item_weight.view(cnn_item_weight.shape[0],1,cnn_item_weight.shape[1]))
             cnn_context_item = cnn_weighted_item.transpose(1,2).sum(1)
             
