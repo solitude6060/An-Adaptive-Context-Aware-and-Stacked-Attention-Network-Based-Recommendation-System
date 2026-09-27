@@ -1,6 +1,7 @@
 import sys
 import getopt
 import torch
+import torch.nn.functional as F
 import torch.optim as optim
 import torch.utils.data as torch_data
 from torchsummaryX import summary
@@ -178,7 +179,7 @@ if __name__ == '__main__':
 
                 pos_pref_score, neg_pref_score = model(user, inputs, pos_item, neg_item)
                 
-                loss = (1.0 - (pos_pref_score - neg_pref_score).sigmoid()).mean()
+                loss = -F.logsigmoid(pos_pref_score - neg_pref_score).mean()
                 loss_list.append(loss)
                 loss.backward()
                 optimizer.step()

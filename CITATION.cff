@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "Please cite the journal article when using this implementation."
+title: "Adaptive Context-Aware Recommendation with Stacked Attention"
+type: software
+authors:
+  - family-names: Ma
+    given-names: Chung-Yao
+repository-code: "https://github.com/solitude6060/An-Adaptive-Context-Aware-and-Stacked-Attention-Network-Based-Recommendation-System"
+preferred-citation:
+  type: article
+  title: "An Adaptive, Context-Aware, and Stacked Attention Network-Based Recommendation System to Capture Users' Temporal Preference"
+  authors:
+    - family-names: Chiang
+      given-names: Jung-Hsien
+    - family-names: Ma
+      given-names: Chung-Yao
+    - family-names: Wang
+      given-names: Chi-Shiang
+    - family-names: Hao
+      given-names: Pei-Yi
+  journal: IEEE Transactions on Knowledge and Data Engineering
+  year: 2023
+  volume: 35
+  issue: 4
+  start: 3404
+  end: 3418
+  doi: 10.1109/TKDE.2022.3140387
